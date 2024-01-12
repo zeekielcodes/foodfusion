@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Hero() {
     return (
-        <div className='flex items-center'>
+        <div className='flex flex-col md:flex-row gap-2 items-center'>
             <div className='w-full md:w-1/2'>
                 <p className='bg-[#FEE9DE] text-primary px-4 py-2 w-[200px] rounded-3xl'>
                     Easy to use API
