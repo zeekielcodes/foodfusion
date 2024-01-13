@@ -72,7 +72,6 @@ Sample Applications: Explore our sample applications to see the API in action an
         },
       ]      
         `}/>
-<hr className='my-4'/>
 <p>/categories: Retrieve lists of all available dish categories.</p>
 <CodeSnippet language="javascript" code={`
           fetch('https://api.dishdart.com/categories')
@@ -103,6 +102,62 @@ Sample Applications: Explore our sample applications to see the API in action an
       ];
            
         `}/>
+        <p>/categories/african: Retrieve lists of all available dishes in a category.</p>
+<CodeSnippet language="javascript" code={`
+          fetch('https://api.dishdart.com/categories/african')
+            .then(response => response.json())
+            .then(data => console.log(data));
+        `}/>
+        <p className="my-4">Output:</p>
+        <CodeSnippet language="javascript" code={`
+    [
+      {
+        id: 1,
+        name: 'Jollof Rice',
+        description: 'A popular West African dish made with rice, tomatoes, and various spices.',
+        price: 11.99,
+        ratings: 4.6,
+        category: 'African',
+        image: 'https://placekitten.com/300/200',
+      },
+      {
+        id: 2,
+        name: 'Bobotie',
+        description: 'A South African baked dish with spiced minced meat topped with an egg-based topping.',
+        price: 13.99,
+        ratings: 4.8,
+        category: 'African',
+        image: 'https://placekitten.com/301/200',
+      },
+      {
+        id: 3,
+        name: 'Injera with Doro Wat',
+        description: 'Ethiopian sourdough flatbread served with spicy chicken stew.',
+        price: 15.99,
+        ratings: 4.5,
+        category: 'African',
+        image: 'https://placekitten.com/302/200',
+      },
+      {
+        id: 4,
+        name: 'Suya',
+        description: 'Nigerian grilled meat skewers coated with a spicy peanut mix.',
+        price: 9.99,
+        ratings: 4.7,
+        category: 'African',
+        image: 'https://placekitten.com/303/200',
+      },
+      {
+        id: 5,
+        name: 'Couscous Royale',
+        description: 'A Moroccan dish with couscous, vegetables, and a mix of meats.',
+        price: 17.99,
+        ratings: 4.4,
+        category: 'African',
+        image: 'https://placekitten.com/304/200',
+      },
+    ];
+        `}/>
 <p>/menus/id: Retrieves the dish with the provided id</p>
 <CodeSnippet language="javascript" code={`
           fetch('https://api.dishdart.com/menus/1')
@@ -129,29 +184,35 @@ Sample Applications: Explore our sample applications to see the API in action an
         `}/>
         <p className="my-4">Output:</p>
         <CodeSnippet language="javascript" code={`
-        [
-          {
-            id: 24,
-            name: 'Chicken Fried Rice',
-            description: 'Delicious fried rice with chicken, vegetables, and soy sauce.',
-            price: 10.99,
-            ratings: 4.7,
-          },
-          {
-            id: 12,
-            name: 'Vegetable Biryani',
-            description: 'Aromatic rice dish with mixed vegetables and biryani spices.',
-            price: 12.99,
-            ratings: 4.5,
-          },
-          {
-            id: 32,
-            name: 'Shrimp Fried Rice',
-            description: 'Savory fried rice with shrimp, peas, and a touch of sesame oil.',
-            price: 14.99,
-            ratings: 4.8,
-          },
-        ];
+    [
+      {
+        id: 24,
+        name: 'Chicken Fried Rice',
+        description: 'Delicious fried rice with chicken, vegetables, and soy sauce.',
+        price: 10.99,
+        ratings: 4.7,
+        category: 'Rice Dishes',
+        image: 'https://placekitten.com/305/200',
+      },
+      {
+        id: 12,
+        name: 'Vegetable Biryani',
+        description: 'Aromatic rice dish with mixed vegetables and biryani spices.',
+        price: 12.99,
+        ratings: 4.5,
+        category: 'Rice Dishes',
+        image: 'https://placekitten.com/306/200',
+      },
+      {
+        id: 32,
+        name: 'Shrimp Fried Rice',
+        description: 'Savory fried rice with shrimp, peas, and a touch of sesame oil.',
+        price: 14.99,
+        ratings: 4.8,
+        category: 'Rice Dishes',
+        image: 'https://placekitten.com/307/200',
+      },
+    ];
         `}/>
 </div>
 
