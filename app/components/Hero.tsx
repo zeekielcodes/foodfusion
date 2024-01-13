@@ -9,7 +9,7 @@ export default function Hero() {
                 <p className='bg-[#FEE9DE] text-primary px-4 py-2 w-[200px] rounded-3xl'>
                     Easy to use API
                 </p>
-                <h1 className='text-5xl font-extrabold mt-8 mb-4'>Welcome to <span className='text-primary'>FoodFusion</span></h1>
+                <h1 className='text-5xl font-extrabold mt-8 mb-4'>Welcome to <span className='text-primary'>DishDart</span></h1>
                 <p className='my-2'>Are you a frontend developer with a hunger for innovation? Dive into the realm of delightful possibilities with FoodFusion API - your gateway to seamless food ordering and menu integration.</p>
                 <p className='mb-6'>From mouthwatering dishes to culinary masterpieces, our API empowers you to build the next generation of food-centric web experiences.</p>
             <div className='flex gap-2 items-center'>

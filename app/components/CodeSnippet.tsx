@@ -10,7 +10,7 @@ export default function CodeSnippet({language, code}:{language:string, code:stri
         Prism.highlightAll();
       }, []);
   return (
-    <pre className="bg-gray-100 p-4 rounded-md overflow-x-auto whitespace-pre-wrap max-h-[700px] overflow-y-auto">
+    <pre className="bg-gray-100 p-2 md:p-4 rounded-md overflow-x-auto whitespace-pre-wrap max-h-[700px] overflow-y-auto">
       <code className={`language-${language}`}>
         {code}
       </code>
